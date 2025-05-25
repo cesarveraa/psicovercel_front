@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAllSubjects = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
-    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/subjects?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.apphttps://psicovercel-front-8ec8.vercel.app/api/subjects?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
 
     return { data, headers };
   } catch (error) {
@@ -14,7 +14,7 @@ export const getAllSubjects = async (searchKeyword = "", page = 1, limit = 10) =
 
 export const getSingleSubject = async (slug) => {
   try {
-    const { data } = await axios.get(`/api/subjects/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/subjects/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -31,7 +31,7 @@ export const deleteSubject = async ({ slug, token }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/subjects/${slug}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/subjects/${slug}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -48,7 +48,7 @@ export const updateSubject = async ({ updatedData, slug, token }) => {
       },
     };
 
-    const { data } = await axios.put(`/api/subjects/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/subjects/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -65,7 +65,7 @@ export const createSubject = async ({ newSubjectData, token }) => {
       },
     };
 
-    const { data } = await axios.post(`/api/subjects`, newSubjectData, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/subjects`, newSubjectData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://psicovercel-front-8ec8.vercel.app/api/estudiantes";
+const BASE_URL = "https://psicovercel-front-8ec8.vercel.apphttps://psicovercel-front-8ec8.vercel.app/api/estudiantes";
 
 export const getAllEstudiantes = async (searchKeyword = "", page = 1, limit = 10) => {
   try {

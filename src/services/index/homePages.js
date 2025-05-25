@@ -9,7 +9,7 @@ export const updateHomePage = async (slug, updatedData, token) => {
       },
     };
 
-    const { data } = await axios.put(`/api/homepage/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/homepage/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -21,7 +21,7 @@ export const updateHomePage = async (slug, updatedData, token) => {
 // Obtener un solo detalle de "About Us"
 export const getSingleHomePage = async (slug) => {
   try {
-    const { data } = await axios.get(`/api/homepage/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/homepage/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

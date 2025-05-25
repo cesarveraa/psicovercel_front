@@ -10,7 +10,7 @@ export const createArea = async (newArea, token) => {
       },
     };
 
-    const { data } = await axios.post(`/api/areas`, newArea, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/areas`, newArea, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -22,7 +22,7 @@ export const createArea = async (newArea, token) => {
 // Obtener todos los Areas
 export const getAreas = async () => {
   try {
-    const { data } = await axios.get(`/api/areas`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/areas`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -34,7 +34,7 @@ export const getAreas = async () => {
 // Obtener un Area por ID
 export const getSingleArea = async (id) => {
     try {
-      const { data } = await axios.get(`/api/areas/${id}`);
+      const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/areas/${id}`);
       return data;
     } catch (error) {
       if (error.response && error.response.data.message)
@@ -52,7 +52,7 @@ export const updateArea = async (id, updatedData, token) => {
       },
     };
 
-    const { data } = await axios.put(`/api/areas/${id}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/areas/${id}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -70,7 +70,7 @@ export const deleteArea = async (id, token) => {
       },
     };
 
-    await axios.delete(`/api/areas/${id}`, config);
+    await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/areas/${id}`, config);
   } catch (error) {
     if (error.response && error.response.data.message)
       throw new Error(error.response.data.message);

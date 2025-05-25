@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllBooks = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
     const { data, headers } = await axios.get(
-      `/api/books?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
+      `https://psicovercel-front-8ec8.vercel.app/api/books?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
     );
     return { data, headers };
   } catch (error) {
@@ -15,7 +15,7 @@ export const getAllBooks = async (searchKeyword = "", page = 1, limit = 10) => {
 
 export const getSingleBook = async ({ slug }) => {
   try {
-    const { data } = await axios.get(`/api/books/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/books/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -32,7 +32,7 @@ export const deleteBook = async ({ slug, token }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/books/${slug}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/books/${slug}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -49,7 +49,7 @@ export const updateBook = async ({ updatedData, slug, token }) => {
       },
     };
 
-    const { data } = await axios.put(`/api/books/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/books/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -66,7 +66,7 @@ export const createBook = async ({ token }) => {
       },
     };
 
-    const { data } = await axios.post(`/api/books`, {}, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/books`, {}, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

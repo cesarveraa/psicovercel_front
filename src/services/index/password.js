@@ -6,7 +6,7 @@ import axios from "axios";
  * @param {string} email
  */
 export const requestPasswordReset = async (email) => {
-  const { data } = await axios.post("/api/auth/request-password-reset", { email });
+  const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/auth/request-password-reset", { email });
   return data;
 };
 
@@ -16,7 +16,7 @@ export const requestPasswordReset = async (email) => {
  * @returns {{ resetToken: string, userId: string }}
  */
 export const verifyResetToken = async (code) => {
-  const { data } = await axios.post("/api/auth/verify-reset-token", { token: code });
+  const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/auth/verify-reset-token", { token: code });
   return data;
 };
 
@@ -26,7 +26,7 @@ export const verifyResetToken = async (code) => {
  */
 export const resetPassword = async ({ resetToken, newPassword, userId }) => {
   const { data } = await axios.post(
-    "/api/auth/reset-password",
+    "https://psicovercel-front-8ec8.vercel.app/api/auth/reset-password",
     { resetToken, newPassword, userId }
   );
   return data;
@@ -36,18 +36,18 @@ export const resetPassword = async ({ resetToken, newPassword, userId }) => {
 
 
 /**
- * GET /api/passwords/:userId
+ * GET https://psicovercel-front-8ec8.vercel.app/api/passwords/:userId
  * @param {{ token: string, userId: string }} args
  * @returns {Promise<Array<{ password: string, createdAt: string }>>}
  */
 export const getPasswordHistory = async ({ token, userId }) => {
   const config = { headers: { Authorization: `Bearer ${token}` } };
-  const { data } = await axios.get(`/api/passwords/${userId}`, config);
+  const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/passwords/${userId}`, config);
   return data;
 };
 
 /**
- * POST /api/passwords
+ * POST https://psicovercel-front-8ec8.vercel.app/api/passwords
  * @param {{ token: string, userId: string, password: string }} args
  */
 export const addPasswordHistory = async ({ token, userId, password }) => {
@@ -58,6 +58,6 @@ export const addPasswordHistory = async ({ token, userId, password }) => {
     },
   };
   const payload = { userId, password };
-  const { data } = await axios.post(`/api/passwords`, payload, config);
+  const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/passwords`, payload, config);
   return data;
 };

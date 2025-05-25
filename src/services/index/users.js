@@ -5,7 +5,7 @@ import axios from "axios";
 export const requestPasswordReset = async (email) => {
   try {
     const { data } = await axios.post(
-      "/api/users/requestPasswordReset",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/requestPasswordReset",
       { email }
     );
     return data;
@@ -18,7 +18,7 @@ export const requestPasswordReset = async (email) => {
 export const verifyResetToken = async (token) => {
   try {
     const { data } = await axios.post(
-      "/api/users/verifyResetToken",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/verifyResetToken",
       { token }
     );
     return data;
@@ -40,7 +40,7 @@ export const resetPassword = async (arg1, arg2) => {
       password = arg2;
     }
     const payload = { token, password };
-    const { data } = await axios.post("/api/users/resetPassword", payload);
+    const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/users/resetPassword", payload);
     return data;
   } catch (error) {
     throw new Error(error.response?.data?.message || error.message);
@@ -52,7 +52,7 @@ export const resetPassword = async (arg1, arg2) => {
 export const signup = async ({ name, email, password, sexo, roles, ci }) => {
   try {
     const { data } = await axios.post(
-      "/api/users/register",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/register",
       { name, email, password, sexo, roles, ci }
     );
     return data;
@@ -65,7 +65,7 @@ export const signup = async ({ name, email, password, sexo, roles, ci }) => {
 export const login = async ({ email, password }) => {
   try {
     const { data } = await axios.post(
-      "/api/users/login",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/login",
       { email, password }
     );
     return data;
@@ -79,7 +79,7 @@ export const getUserProfile = async ({ token }) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.get(
-      "/api/users/profile",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/profile",
       config
     );
     return data;
@@ -93,7 +93,7 @@ export const updateProfile = async ({ token, userData, userId }) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.put(
-      `/api/users/updateProfile/${userId}`,
+      `https://psicovercel-front-8ec8.vercel.app/api/users/updateProfile/${userId}`,
       userData,
       config
     );
@@ -113,7 +113,7 @@ export const updateProfilePicture = async ({ token, formData }) => {
       },
     };
     const { data } = await axios.put(
-      "/api/users/updateProfilePicture",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/updateProfilePicture",
       formData,
       config
     );
@@ -133,7 +133,7 @@ export const getAllUsers = async (
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data, headers } = await axios.get(
-      `/api/users?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`,
+      `https://psicovercel-front-8ec8.vercel.app/api/users?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`,
       config
     );
     return { data, headers };
@@ -147,7 +147,7 @@ export const deleteUser = async ({ slug, token }) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.delete(
-      `/api/users/${slug}`,
+      `https://psicovercel-front-8ec8.vercel.app/api/users/${slug}`,
       config
     );
     return data;
@@ -161,7 +161,7 @@ export const createUser = async ({ token, userData }) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.post(
-      "/api/users/register",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/register",
       userData,
       config
     );
@@ -176,7 +176,7 @@ export const saveUsersSchedules = async ({ userId, schedules, token }) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.post(
-      "/api/users/saveSchedules",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/saveSchedules",
       { schedules },
       config
     );
@@ -191,7 +191,7 @@ export const changePassword = async ({ token, currentPassword, newPassword }) =>
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
     const { data } = await axios.post(
-      "/api/users/change-password",
+      "https://psicovercel-front-8ec8.vercel.app/api/users/change-password",
       { currentPassword, newPassword },
       config
     );

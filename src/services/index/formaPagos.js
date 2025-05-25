@@ -11,7 +11,7 @@ const config = (token) => ({
 // Crear una nueva forma de pago
 export const createFormaPago = async (formaPagoData, token) => {
   try {
-    const { data } = await axios.post('/api/formaPago/formaspago', formaPagoData, config(token));
+    const { data } = await axios.post('https://psicovercel-front-8ec8.vercel.app/api/formaPago/formaspago', formaPagoData, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -23,7 +23,7 @@ export const createFormaPago = async (formaPagoData, token) => {
 // Obtener todas las formas de pago
 export const getAllFormaPago = async () => {
   try {
-    const { data } = await axios.get('/api/formaPago/formaspago');
+    const { data } = await axios.get('https://psicovercel-front-8ec8.vercel.app/api/formaPago/formaspago');
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -35,7 +35,7 @@ export const getAllFormaPago = async () => {
 // Obtener una sola forma de pago por ID
 export const getFormaPagoById = async (id) => {
   try {
-    const { data } = await axios.get(`/api/formaPago/formaspago/${id}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/formaPago/formaspago/${id}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -47,7 +47,7 @@ export const getFormaPagoById = async (id) => {
 // Actualizar una forma de pago existente
 export const updateFormaPago = async (id, updatedData, token) => {
   try {
-    const { data } = await axios.put(`/api/formaPago/formaspago/${id}`, updatedData, config(token));
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/formaPago/formaspago/${id}`, updatedData, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -59,7 +59,7 @@ export const updateFormaPago = async (id, updatedData, token) => {
 // Eliminar una forma de pago
 export const deleteFormaPago = async (id, token) => {
   try {
-    const { data } = await axios.delete(`/api/formaPago/formaspago/${id}`, config(token));
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/formaPago/formaspago/${id}`, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

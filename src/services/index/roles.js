@@ -9,7 +9,7 @@ import axios from "axios";
 export const getAllRoles = async (token) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
-    const { data } = await axios.get("/api/roles", config);
+    const { data } = await axios.get("https://psicovercel-front-8ec8.vercel.app/api/roles", config);
     return data; // data es un array de objetos: [{ _id, name, description }, ...]
   } catch (error) {
     if (error.response?.data.message) throw new Error(error.response.data.message);
@@ -20,7 +20,7 @@ export const getAllRoles = async (token) => {
 export const createRole = async (roleData, token) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
-    const { data } = await axios.post("/api/roles", roleData, config);
+    const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/roles", roleData, config);
     return data;
   } catch (error) {
     if (error.response?.data.message) throw new Error(error.response.data.message);
@@ -31,7 +31,7 @@ export const createRole = async (roleData, token) => {
 export const updateRole = async (roleId, roleData, token) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
-    const { data } = await axios.put(`/api/roles/${roleId}`, roleData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/roles/${roleId}`, roleData, config);
     return data;
   } catch (error) {
     if (error.response?.data.message) throw new Error(error.response.data.message);
@@ -42,7 +42,7 @@ export const updateRole = async (roleId, roleData, token) => {
 export const deleteRole = async (roleId, token) => {
   try {
     const config = { headers: { Authorization: `Bearer ${token}` } };
-    const { data } = await axios.delete(`/api/roles/${roleId}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/roles/${roleId}`, config);
     return data;
   } catch (error) {
     if (error.response?.data.message) throw new Error(error.response.data.message);

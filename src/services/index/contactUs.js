@@ -10,7 +10,7 @@ export const updateContactUs = async (slug, updatedData, token) => {
       },
     };
 
-    const { data } = await axios.put(`/api/contact/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/contact/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -22,7 +22,7 @@ export const updateContactUs = async (slug, updatedData, token) => {
 // Obtener un solo detalle de "About Us"
 export const getSingleContactUs = async (slug) => {
   try {
-    const { data } = await axios.get(`/api/contact/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/contact/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

@@ -11,7 +11,7 @@ const config = (token) => ({
 // Crear un nuevo producto
 export const createProduct = async (productData, token) => {
   try {
-    const { data } = await axios.post('/api/products/products', productData, config(token));
+    const { data } = await axios.post('https://psicovercel-front-8ec8.vercel.app/api/products/products', productData, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -23,7 +23,7 @@ export const createProduct = async (productData, token) => {
 // Obtener todos los productos
 export const getAllProducts = async () => {
   try {
-    const { data } = await axios.get('/api/products/products');
+    const { data } = await axios.get('https://psicovercel-front-8ec8.vercel.app/api/products/products');
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -35,7 +35,7 @@ export const getAllProducts = async () => {
 // Obtener un solo producto por ID
 export const getProductById = async (id) => {
   try {
-    const { data } = await axios.get(`/api/products/products/${id}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/products/products/${id}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -47,7 +47,7 @@ export const getProductById = async (id) => {
 // Actualizar un producto existente
 export const updateProduct = async (id, updatedData, token) => {
   try {
-    const { data } = await axios.put(`/api/products/products/${id}`, updatedData, config(token));
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/products/products/${id}`, updatedData, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -59,7 +59,7 @@ export const updateProduct = async (id, updatedData, token) => {
 // Eliminar un producto
 export const deleteProduct = async (id, token) => {
   try {
-    const { data } = await axios.delete(`/api/products/products/${id}`, config(token));
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/products/products/${id}`, config(token));
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

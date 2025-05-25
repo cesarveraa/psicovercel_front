@@ -3,7 +3,7 @@ import axios from "axios";
 // Actualizar totalVisualizaciones
 export const updateTotalVisualizaciones = async (totalVisualizaciones) => {
     try {
-        const { data } = await axios.put('/api/dashboard/total-visualizaciones', { totalVisualizaciones });
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/total-visualizaciones', { totalVisualizaciones });
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -22,7 +22,7 @@ export const updateNuevosUsuarios = async (nuevosUsuarios, token) => {
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/nuevos-usuarios', { nuevosUsuarios }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/nuevos-usuarios', { nuevosUsuarios }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -41,7 +41,7 @@ export const updateTiempoPromedioVisita = async (tiempoPromedioVisita, token) =>
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/tiempo-promedio-visita', { tiempoPromedioVisita }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/tiempo-promedio-visita', { tiempoPromedioVisita }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -60,7 +60,7 @@ export const updateTotalCompartidos = async (token) => {
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/total-compartidos/increment', {}, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/total-compartidos/increment', {}, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -79,7 +79,7 @@ export const updateCompartidos = async (compartido, token) => {
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/compartidos', { compartido }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/compartidos', { compartido }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -98,7 +98,7 @@ export const updateCompartidosPorPlataforma = async ({ plataforma, categoria }, 
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/compartidos-por-plataforma', { plataforma, categoria }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/compartidos-por-plataforma', { plataforma, categoria }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -117,7 +117,7 @@ export const updateEventosAsistidos = async (eventosAsistidos, token) => {
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/eventos-asistidos', { eventosAsistidos }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/eventos-asistidos', { eventosAsistidos }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -136,7 +136,7 @@ export const updateEstudiantesPorSexo = async (estudiantesPorSexo, token) => {
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/estudiantes-por-sexo', { estudiantesPorSexo }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/estudiantes-por-sexo', { estudiantesPorSexo }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -148,7 +148,7 @@ export const updateEstudiantesPorSexo = async (estudiantesPorSexo, token) => {
 // Obtener todos los datos del dashboard
 export const getDashboardData = async () => {
     try {
-        const { data } = await axios.get('/api/dashboard');
+        const { data } = await axios.get('https://psicovercel-front-8ec8.vercel.app/api/dashboard');
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -167,7 +167,7 @@ export const anadirCategoriaATodasLasPlataformas = async (nuevaCategoria, token)
             },
         };
 
-        const { data } = await axios.put('/api/dashboard/anadir-categoria-todas-plataformas', { nuevaCategoria }, config);
+        const { data } = await axios.put('https://psicovercel-front-8ec8.vercel.app/api/dashboard/anadir-categoria-todas-plataformas', { nuevaCategoria }, config);
         return data;
     } catch (error) {
         if (error.response && error.response.data.message)
@@ -186,7 +186,7 @@ export const eliminarCategoriaDeTodasLasPlataformas = async (categoriaEliminada,
             },
         };
 
-        const { data } = await axios.delete('/api/dashboard/eliminar-categoria', {
+        const { data } = await axios.delete('https://psicovercel-front-8ec8.vercel.app/api/dashboard/eliminar-categoria', {
             data: { categoriaEliminada }, // Enviando data en el cuerpo de una solicitud DELETE
             headers: config.headers
         });

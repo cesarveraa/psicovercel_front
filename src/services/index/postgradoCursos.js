@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAllPostgradoCursos = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
-    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/postgradoCurso?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.apphttps://psicovercel-front-8ec8.vercel.app/api/postgradoCurso?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
     console.log(data);
     return { data, headers };
   } catch (error) {
@@ -14,7 +14,7 @@ export const getAllPostgradoCursos = async (searchKeyword = "", page = 1, limit 
 
 export const getSinglePostgradoCurso = async (id) => {
   try {
-    const { data } = await axios.get(`/api/postgradoCursos/${id}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/postgradoCursos/${id}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -31,7 +31,7 @@ export const deletePostgradoCurso = async ({ id, token }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/postgradoCursos/${id}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/postgradoCursos/${id}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -48,7 +48,7 @@ export const updatePostgradoCurso = async ({ updatedData, id, token }) => {
       },
     };
 
-    const { data } = await axios.put(`/api/postgradoCursos/${id}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/postgradoCursos/${id}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -65,7 +65,7 @@ export const createPostgradoCurso = async ({ newCursoData, token }) => {
       },
     };
 
-    const { data } = await axios.post(`/api/postgradoCursos`, newCursoData, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/postgradoCursos`, newCursoData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

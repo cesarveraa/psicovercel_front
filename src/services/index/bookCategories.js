@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllBookCategories = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
     const { data, headers } = await axios.get(
-      `/api/book-categories?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
+      `https://psicovercel-front-8ec8.vercel.app/api/book-categories?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`
     );
     return { data, headers };
   } catch (error) {
@@ -20,7 +20,7 @@ export const deleteBookCategory = async ({ bookCategoryId, token }) => {
           Authorization: `Bearer ${token}`,
         },
       };
-      const { data } = await axios.delete(`/api/book-categories/${bookCategoryId}`, config);
+      const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/book-categories/${bookCategoryId}`, config);
       return data;
     } catch (error) {
       if (error.response && error.response.data.message) {
@@ -39,7 +39,7 @@ export const createBookCategory = async ({ token, title }) => {
     };
 
     const { data } = await axios.post(
-      `/api/book-categories`,
+      `https://psicovercel-front-8ec8.vercel.app/api/book-categories`,
       { title },
       config
     );
@@ -60,7 +60,7 @@ export const updateBookCategory = async ({ token, title, bookCategoryId }) => {
     };
 
     const { data } = await axios.put(
-      `/api/book-categories/${bookCategoryId}`,
+      `https://psicovercel-front-8ec8.vercel.app/api/book-categories/${bookCategoryId}`,
       { title },
       config
     );
@@ -74,7 +74,7 @@ export const updateBookCategory = async ({ token, title, bookCategoryId }) => {
 
 export const getSingleBookCategory = async ({ bookCategoryId }) => {
   try {
-    const { data } = await axios.get(`/api/book-categories/${bookCategoryId}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/book-categories/${bookCategoryId}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

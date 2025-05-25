@@ -10,7 +10,7 @@ export const createSystemLog = async ({ userId, email, sistema, accion }, token)
         },
       };
   
-      const { data } = await axios.post("/api/logsSistema/create", {
+      const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/logsSistema/create", {
         userId,
         email,
         sistema,
@@ -32,7 +32,7 @@ export const getAllSystemLogs = async (token) => {
         Authorization: `Bearer ${token}`,
       },
     };
-    const { data } = await axios.get("/api/logsSistema", config);
+    const { data } = await axios.get("https://psicovercel-front-8ec8.vercel.app/api/logsSistema", config);
     return data;
   } catch (error) {
     throw new Error(error.response?.data?.message || error.message);
@@ -47,7 +47,7 @@ export const getSystemLogsByUser = async ({ userId, token }) => {
         Authorization: `Bearer ${token}`,
       },
     };
-    const { data } = await axios.get(`/api/logsSistema/user/${userId}`, config);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/logsSistema/user/${userId}`, config);
     return data;
   } catch (error) {
     throw new Error(error.response?.data?.message || error.message);

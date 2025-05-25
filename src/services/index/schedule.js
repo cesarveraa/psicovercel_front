@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getSchedulesByIds = async (ids) => {
   try {
-    const { data } = await axios.post('https://psicovercel-front-8ec8.vercel.app/api/schedules/getByIds', { ids });
+    const { data } = await axios.post('https://psicovercel-front-8ec8.vercel.apphttps://psicovercel-front-8ec8.vercel.app/api/schedules/getByIds', { ids });
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -13,7 +13,7 @@ export const getSchedulesByIds = async (ids) => {
 
 export const getAllSchedules = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
-    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/schedules?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.apphttps://psicovercel-front-8ec8.vercel.app/api/schedules?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`)
 
     return { data, headers };
   } catch (error) {
@@ -25,7 +25,7 @@ export const getAllSchedules = async (searchKeyword = "", page = 1, limit = 10) 
 
 export const getSingleSchedule = async (slug) => {
   try {
-    const { data } = await axios.get(`/api/schedules/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/schedules/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -42,7 +42,7 @@ export const deleteSchedule = async ({ slug, token }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/schedules/${slug}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/schedules/${slug}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -59,7 +59,7 @@ export const updateSchedule = async ({ updatedData, slug, token }) => {
       },
     };
 
-    const { data } = await axios.put(`/api/schedules/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/schedules/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -76,7 +76,7 @@ export const createSchedule = async ({ newScheduleData, token }) => {
       },
     };
 
-    const { data } = await axios.post(`/api/schedules`, newScheduleData, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/schedules`, newScheduleData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

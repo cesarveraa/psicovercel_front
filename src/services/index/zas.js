@@ -10,7 +10,7 @@ export const updateZA = async (slug, updatedData, token) => {
       },
     };
 
-    const { data } = await axios.put(`/api/za/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/za/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -22,7 +22,7 @@ export const updateZA = async (slug, updatedData, token) => {
 // Obtener un solo detalle de "About Us"
 export const getSingleZA = async (slug) => {
   try {
-    const { data } = await axios.get(`/api/za/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/za/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

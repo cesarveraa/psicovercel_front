@@ -8,7 +8,7 @@ export const getAllLoginLogs = async (token) => {
         Authorization: `Bearer ${token}`,
       },
     };
-    const { data } = await axios.get("/api/logs", config);
+    const { data } = await axios.get("https://psicovercel-front-8ec8.vercel.app/api/logs", config);
     return data;
   } catch (error) {
     throw new Error(error.response?.data?.message || error.message);
@@ -23,7 +23,7 @@ export const getLoginLogsByUser = async ({ userId, token }) => {
         Authorization: `Bearer ${token}`,
       },
     };
-    const { data } = await axios.get(`/api/logs/${userId}`, config);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/logs/${userId}`, config);
     return data;
   } catch (error) {
     throw new Error(error.response?.data?.message || error.message);
@@ -32,7 +32,7 @@ export const getLoginLogsByUser = async ({ userId, token }) => {
 
 export const createLoginLog = async ({ userId, email }) => {
     try {
-      const { data } = await axios.post("/api/logs/create", {
+      const { data } = await axios.post("https://psicovercel-front-8ec8.vercel.app/api/logs/create", {
         userId,
         email,
       });

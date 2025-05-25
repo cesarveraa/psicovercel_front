@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllPosts = async (searchKeyword = "", page = 1, limit = 10, category = "") => {
   try {
     const { data, headers } = await axios.get(
-      `/api/posts?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}&category=${category}`
+      `https://psicovercel-front-8ec8.vercel.app/api/posts?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}&category=${category}`
     );
     return { data, headers };
   } catch (error) {
@@ -14,7 +14,7 @@ export const getAllPosts = async (searchKeyword = "", page = 1, limit = 10, cate
 };
 export const getSinglePost = async ({ slug }) => {
   try {
-    const { data } = await axios.get(`/api/posts/${slug}`);
+    const { data } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/posts/${slug}`);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -31,7 +31,7 @@ export const deletePost = async ({ slug, token }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/posts/${slug}`, config);
+    const { data } = await axios.delete(`https://psicovercel-front-8ec8.vercel.app/api/posts/${slug}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -48,7 +48,7 @@ export const updatePost = async ({ updatedData, slug, token }) => {
       },
     };
 
-    const { data } = await axios.put(`/api/posts/${slug}`, updatedData, config);
+    const { data } = await axios.put(`https://psicovercel-front-8ec8.vercel.app/api/posts/${slug}`, updatedData, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -65,7 +65,7 @@ export const createPost = async ({ token }) => {
       },
     };
 
-    const { data } = await axios.post(`/api/posts`, {}, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/posts`, {}, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -82,7 +82,7 @@ export const likePost = async (slug, token) => {
       },
     };
 
-    const { data } = await axios.post(`/api/posts/${slug}/like`, {}, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/posts/${slug}/like`, {}, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -99,7 +99,7 @@ export const respondToEvent = async (slug, response, token) => {
       },
     };
 
-    const { data } = await axios.post(`/api/posts/${slug}/respond`, { response }, config);
+    const { data } = await axios.post(`https://psicovercel-front-8ec8.vercel.app/api/posts/${slug}/respond`, { response }, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)
