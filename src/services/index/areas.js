@@ -1,4 +1,4 @@
-import axios from "./axios";
+import axios from "axios";
 
 // Crear un nuevo Area
 export const createArea = async (newArea, token) => {

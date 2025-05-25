@@ -1,4 +1,4 @@
-import axios from "./axios";
+import axios from "axios";
 
 export const getAllPosts = async (searchKeyword = "", page = 1, limit = 10, category = "") => {
   try {

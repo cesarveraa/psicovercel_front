@@ -1,5 +1,5 @@
 // src/services/index/users.js
-import axios from "./axios";
+import axios from "axios";
 
 /**
  * Solicita envío de correo de restablecimiento

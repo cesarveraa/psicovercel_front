@@ -1,9 +1,9 @@
-import { useMutation } from "./@tanstack/react-query";
-import React from "./react";
-import { useForm } from "./react-hook-form";
-import toast from "./react-hot-toast";
-import { useDispatch } from "./react-redux";
-import { Link, useNavigate } from "./react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+import React from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 import MainLayout from "./../../components/MainLayout";
 import { createLoginLog } from "./../../services/index/logsLogin";

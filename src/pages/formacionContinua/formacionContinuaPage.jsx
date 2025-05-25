@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "./react";
+import React, { useEffect, useState } from "react";
 import MainLayout from "./../../components/MainLayout";
 import ExternalResourceBanner from "./../../components/ExternalResourceBanner";
 import PostgradoCursoCard from '../../components/PostgradoCursoCard';
 import { getAllPostgradoCursos } from '../../services/index/postgradoCursos';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const PosgradoPage = () => {
   const [cursos, setCursos] = useState([]); // Cambiado de `null` a `[]`

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "./react";
-import { useSearchParams, Link } from "./react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useSearchParams, Link } from "react-router-dom";
 import MainLayout from "./../../components/MainLayout";
 import Pagination from "./../../components/Pagination";
 import FlipCard from "./../../components/FlipCard";
 import { faCalendarAlt, faBookOpen, faGraduationCap, faClock } from '@fortawesome/free-solid-svg-icons';
 import { getAllPosts } from "./../../services/index/posts";
-import { useQuery } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
+import { useQuery } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
 import SemesterAreaGrid from "./../../components/subjects/SemesterAreaGrid";
 import { getAllEstudiantes } from "./../../services/index/estudiante";
 import UniversityCarousel from '../../pages/universities/UniversityCarrousel'; // Importa el componente del carrusel

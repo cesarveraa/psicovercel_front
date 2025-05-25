@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "./react";
+import React, { useState, useEffect } from "react";
 import { getAllSubjects } from "./../../services/index/subjects";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const MateriaSelector = ({ selectedSubjects, setSelectedSubjects }) => {
   const [subjects, setSubjects] = useState([]);

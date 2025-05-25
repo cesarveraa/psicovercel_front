@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "./react";
-import { useNavigate } from "./react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import MainLayout from "./../../components/MainLayout";
-import { useSelector } from "./react-redux";
+import { useSelector } from "react-redux";
 import { getUserProfile } from "./../../services/index/users";
 import { getDocente } from "./../../services/index/docentes";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import Timetable from "./timeTables";
 import PulpiCentrado from "./../../components/pulpiHorario/PulpiCentrado";
 import { generateRandomColor, isColorUnique } from "./../../utils/colorUtils";
-import jsPDF from "./jspdf";
-import html2canvas from "./html2canvas";
+import jsPDF from "jspdf";
+import html2canvas from "html2canvas";
 
 const ViewSchedulePage = () => {
   const [schedule, setSchedule] = useState([]);

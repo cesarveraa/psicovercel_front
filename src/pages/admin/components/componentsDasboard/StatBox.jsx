@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, useTheme } from "./@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { useSpring, animated } from 'react-spring';
 import { tokens } from "./theme";

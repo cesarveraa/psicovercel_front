@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
-import { useQuery } from "./@tanstack/react-query";
-import { useEffect } from "./react";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
-import { Outlet, useLocation, useNavigate } from "./react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { getUserProfile } from "./../../services/index/users";
 import Header from "./components/header/Header";
 

@@ -1,9 +1,9 @@
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import React, { useEffect, useState, useMemo } from "./react";
-import { useForm } from "./react-hook-form";
-import { useDispatch, useSelector } from "./react-redux";
-import { useNavigate } from "./react-router-dom";
-import { toast } from "./react-hot-toast";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import React, { useEffect, useState, useMemo } from "react";
+import { useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 import MainLayout from "./../../components/MainLayout";
 import ProfilePicture from "./../../components/ProfilePicture";
 import { compareSync } from "bcryptjs";

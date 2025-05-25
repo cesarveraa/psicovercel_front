@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useParams, Link } from 'react-router-dom';
-import { useSelector } from "./react-redux";
+import { useSelector } from "react-redux";
 import { getOrderById, setOrderAdminViewStatus, setOrderApprovalStatus } from '../../../../services/index/orders';
 import { getProductById } from '../../../../services/index/products';
 import Modal from 'react-modal';

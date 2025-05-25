@@ -1,4 +1,4 @@
-import { BiFile } from "./react-icons/bi";
+import { BiFile } from "react-icons/bi";
 
 const BookDetailSkeleton = () => {
   return (

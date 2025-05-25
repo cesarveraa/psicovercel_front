@@ -1,10 +1,10 @@
-import React from "./react";
+import React from "react";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaWhatsappSquare,
-} from "./react-icons/fa";
-import { useSelector } from "./react-redux";
+} from "react-icons/fa";
+import { useSelector } from "react-redux";
 import { updateCompartidos, updateCompartidosPorPlataforma, updateTotalCompartidos } from "./../services/index/dashboards";
 
 const SocialShareButtons = ({ url, title, categorias, token }) => {

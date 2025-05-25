@@ -1,8 +1,8 @@
 // src/pages/ProductsPage.jsx
 import React, { useEffect, useState, useRef } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useSearchParams, Link, useNavigate } from "./react-router-dom";
-import { toast } from "./react-hot-toast";
+import { useSearchParams, Link, useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
 import { getAllProducts } from '../../services/index/products';
 import { getAllCategories } from '../../services/index/categoryService';
 import MainLayout from "./../../components/MainLayout";

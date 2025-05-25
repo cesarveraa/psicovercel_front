@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useQuery } from "./@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { images } from "./../constants";
 import { getAllComments } from "./../services/index/pulpiComentarios";
 

@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "./react";
+import React, { useEffect, useState } from "react";
 import MainLayout from '../../components/MainLayout';
 import ParchmentBox2 from "./../../components/ParchmentBox2";
-import { useSearchParams } from "./react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import Pagination from "./../../components/Pagination";
 import FlipCard from "./../../components/FlipCard";
-import Slider from "./react-slick";
+import Slider from "react-slick";
 
 import { faPersonCircleQuestion, faBookOpen, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { getAllPosts } from "./../../services/index/posts";
-import { useQuery } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
+import { useQuery } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
 
 const Iglesia = () => {
   const [searchParams, setSearchParams] = useSearchParams();

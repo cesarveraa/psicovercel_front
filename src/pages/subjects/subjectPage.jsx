@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAllSubjects } from '../../services/index/subjects';
 import { getSchedulesByIds } from '../../services/index/schedule';
 import { getDocente, getAllDocentes } from '../../services/index/docentes';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import MainLayout from "./../../components/MainLayout";
 import TeacherCard from "./../../components/TeacherCard";
 

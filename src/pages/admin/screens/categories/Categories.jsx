@@ -1,7 +1,7 @@
-import { useMutation } from "./@tanstack/react-query";
-import { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { Link } from "./react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { Link } from "react-router-dom";
 import { useDataTable } from "./../../../../hooks/useDataTable";
 import { anadirCategoriaATodasLasPlataformas, eliminarCategoriaDeTodasLasPlataformas } from '../../../../services/index/dashboards';
 import { createSystemLog } from "./../../../../services/index/logsSistema";

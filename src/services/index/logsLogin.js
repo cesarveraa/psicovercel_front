@@ -1,4 +1,4 @@
-import axios from "./axios";
+import axios from "axios";
 
 // 1. Obtener todos los logs del sistema (solo para admins)
 export const getAllLoginLogs = async (token) => {

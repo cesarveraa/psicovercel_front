@@ -1,9 +1,9 @@
-import { useQuery } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
+import { useQuery } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { useSearchParams } from "./react-router-dom";
-import Slider from "./react-slick";
+import { useSearchParams } from "react-router-dom";
+import Slider from "react-slick";
 import FlipCard2 from "./../../components/FlipCard2";
 import MainLayout from '../../components/MainLayout';
 import { getAllPosts } from "./../../services/index/posts";

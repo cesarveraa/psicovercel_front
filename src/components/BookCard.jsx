@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "./react";
-import { AiOutlineClose } from "./react-icons/ai";
-import { BsCheckLg } from "./react-icons/bs";
-import { FaFilePdf } from "./react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { BsCheckLg } from "react-icons/bs";
+import { FaFilePdf } from "react-icons/fa";
 import { images, stables } from "./../constants";
 import { getAllBookCategories } from "./../services/index/bookCategories";
 

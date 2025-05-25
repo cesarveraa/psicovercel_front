@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 
 const ParchmentBox2 = ({ title, image,subtitle,description, isOpen}) => {
   return (

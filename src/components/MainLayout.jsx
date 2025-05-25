@@ -1,4 +1,4 @@
-import React, { useState } from "./react";
+import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Pulpi from "./../components/Pulpi"; // Asegúrate de que la ruta sea correcta

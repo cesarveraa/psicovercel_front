@@ -1,5 +1,5 @@
-import { useEffect } from "./react";
-import { Link } from "./react-router-dom";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { images, stables } from "./../../../../constants";
 import { useDataTable } from "./../../../../hooks/useDataTable";
 import { deleteBook, getAllBooks } from "./../../../../services/index/books";

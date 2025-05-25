@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "./react";
-import { useQuery } from "./@tanstack/react-query";
+import React, { useState, useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { getSingleHomePage } from "./../../../services/index/homePages";
 import { images } from "./../../../constants";
 import ErrorMessage from "./../../../components/ErrorMessage";

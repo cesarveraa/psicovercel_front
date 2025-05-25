@@ -1,5 +1,5 @@
 // /src/components/BookCardSkeleton.js
-import React from "./react";
+import React from "react";
 
 const BookCardSkeleton = ({ className }) => {
   return (

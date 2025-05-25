@@ -1,6 +1,6 @@
-import { useMutation, useQuery } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { images, stables } from "./../../../../constants";
 import { useDataTable } from "./../../../../hooks/useDataTable";
 import { createSystemLog } from "./../../../../services/index/logsSistema";

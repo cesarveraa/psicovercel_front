@@ -1,9 +1,9 @@
-import { useQuery } from "./@tanstack/react-query";
-import React from "./react";
-import { toast } from "./react-hot-toast";
-import { FaArrowRight } from "./react-icons/fa";
-import { Link } from "./react-router-dom";
-import Slider from "./react-slick";
+import { useQuery } from "@tanstack/react-query";
+import React from "react";
+import { toast } from "react-hot-toast";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import ArticleCard from "./../../../components/ArticleCard";

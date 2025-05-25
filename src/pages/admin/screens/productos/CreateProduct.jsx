@@ -1,8 +1,8 @@
-import { useMutation, useQueryClient } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
-import { useNavigate } from "./react-router-dom";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { createCategory, getAllCategories } from "./../../../../services/index/categoryService";
 import { createSystemLog } from "./../../../../services/index/logsSistema";
 import { createProduct } from "./../../../../services/index/products";

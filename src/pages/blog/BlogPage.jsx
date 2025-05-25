@@ -1,7 +1,7 @@
-import { useQuery } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { useSearchParams, Link } from "./react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { useSearchParams, Link } from "react-router-dom";
 import MainLayout from "./../../components/MainLayout";
 import Pagination from "./../../components/Pagination";
 import Book from '../../components/Book';

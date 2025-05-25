@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { FaBell, FaCheck, FaSearch, FaTimes, FaTrash } from 'react-icons/fa';
 import Modal from 'react-modal';
-import { useSelector } from "./react-redux";
+import { useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { images } from "./../../../../constants";
 import { createSystemLog } from '../../../../services/index/logsSistema';

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "./react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "./../../components/MainLayout";
 import HorarioDisplay from "./horarioDisplay";
 import Timetable from "./timeTable";
 import Modal from "./Modal";
 import PulpiRestricciones from "./../../components/pulpiHorario/PulpiRestricciones";
-import { useQuery } from "./@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { getAllSubjects } from "./../../services/index/subjects";
 import { saveUsersSchedules } from "./../../services/index/users";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
 import { generateRandomColor, isColorUnique } from "./../../utils/colorUtils";
 
 const comentariosPulpi = [

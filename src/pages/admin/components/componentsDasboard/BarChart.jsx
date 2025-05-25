@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from "./@mui/material";
+import { useTheme } from "@mui/material";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { tokens } from "./theme";
 

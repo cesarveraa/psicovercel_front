@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 
 const ParchmentBox = ({ title, image, cargo, email, telefono }) => {
   return (

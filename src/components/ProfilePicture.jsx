@@ -1,10 +1,10 @@
-import React, { useState } from "./react";
-import { createPortal } from "./react-dom";
-import { HiOutlineCamera } from "./react-icons/hi";
+import React, { useState } from "react";
+import { createPortal } from "react-dom";
+import { HiOutlineCamera } from "react-icons/hi";
 
-import { useMutation, useQueryClient } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
-import { useDispatch, useSelector } from "./react-redux";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
 import { stables } from "./../constants";
 import { updateProfilePicture } from "./../services/index/users";
 import { userActions } from "./../store/reducers/userReducers";

@@ -1,5 +1,5 @@
 // src/services/index/roles.js
-import axios from "./axios";
+import axios from "axios";
 
 /**
  * Obtiene la lista de roles completos desde la API.

@@ -1,4 +1,4 @@
-import AsyncSelect from "./react-select/async";
+import AsyncSelect from "react-select/async";
 
 const MultiSelectTagDropdown = ({
   defaultValue = [],

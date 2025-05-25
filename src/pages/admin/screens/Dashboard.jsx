@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "./react";
-import { Box, Typography, useTheme, useMediaQuery } from "./@mui/material";
+import React, { useEffect, useState } from "react";
+import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import { tokens } from "./../components/componentsDasboard/theme";
 import IosShareIcon from '@mui/icons-material/IosShare';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import PersonAddIcon from "./@mui/icons-material/PersonAdd";
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import Header from "./../components/componentsDasboard/Header";
 import StatBox from "./../components/componentsDasboard/StatBox";

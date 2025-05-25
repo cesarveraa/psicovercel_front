@@ -1,8 +1,8 @@
 // src/pages/ProductDetailPage.jsx
-import React, { useEffect, useState, useRef } from "./react";
-import { Link, useParams } from "./react-router-dom";
-import { useQuery } from "./@tanstack/react-query";
-import { useSelector } from "./react-redux";
+import React, { useEffect, useState, useRef } from "react";
+import { Link, useParams } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { useSelector } from "react-redux";
 import BreadCrumbs from "./../../components/BreadCrumbs";
 import ErrorMessage from "./../../components/ErrorMessage";
 import MainLayout from "./../../components/MainLayout";
@@ -10,7 +10,7 @@ import SocialShareButtons from "./../../components/SocialShareButtons";
 import { images } from "./../../constants";
 import { getProductById, getAllProducts } from "./../../services/index/products";
 import ProductDetailSkeleton from "./productSkeleton";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import { FaShoppingCart } from 'react-icons/fa';
 import CartSummary from "./cartSummary";
 

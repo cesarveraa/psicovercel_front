@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import TeacherCard from "./../../../components/TeacherCard";
 import { getSingleAbout } from "./../../../services/index/abouts";
 import { getAllDocentes, getDocente } from "./../../../services/index/docentes";

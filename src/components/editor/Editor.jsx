@@ -1,4 +1,4 @@
-import { EditorContent, useEditor } from "./@tiptap/react";
+import { EditorContent, useEditor } from "@tiptap/react";
 import "highlight.js/styles/atom-one-dark.css";
 import MenuBar from "./MenuBar";
 import { extensions } from "./../../constants/tiptapExtensions";

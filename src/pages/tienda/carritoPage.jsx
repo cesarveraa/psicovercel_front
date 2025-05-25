@@ -1,8 +1,8 @@
 // src/pages/CartPage.jsx
-import React, { useState, useEffect } from "./react";
-import { Link } from "./react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import MainLayout from "./../../components/MainLayout";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const LOCAL_STORAGE_KEY = 'psicoTienda_cart';
 

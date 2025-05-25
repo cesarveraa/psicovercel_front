@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "./react";
-import { Toaster } from "./react-hot-toast";
-import { Route, Routes } from "./react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SearchResults from "./components/Search";
 import AboutUs from "./pages/aboutUs/aboutUs";

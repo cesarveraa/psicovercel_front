@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "./react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "./../../components/MainLayout";
-import { toast } from "./react-hot-toast";
-import Modal from "./react-modal";
-import { Link } from "./react-router-dom";
-import { useDropzone } from "./react-dropzone";
-import { useQuery, useMutation } from "./@tanstack/react-query";
+import { toast } from "react-hot-toast";
+import Modal from "react-modal";
+import { Link } from "react-router-dom";
+import { useDropzone } from "react-dropzone";
+import { useQuery, useMutation } from "@tanstack/react-query";
 import { getAllFormaPago } from "./../../services/index/formaPagos";
 import { createOrder } from "./../../services/index/orders";
-import { useSelector } from "./react-redux";
+import { useSelector } from "react-redux";
 
 const LOCAL_STORAGE_KEY = 'psicoTienda_cart';
 

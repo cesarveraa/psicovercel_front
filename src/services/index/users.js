@@ -1,5 +1,5 @@
 // src/services/index/users.js
-import axios from "./axios";
+import axios from "axios";
 
 // 1. Solicitar cambio de contraseña: envía email con token corto
 export const requestPasswordReset = async (email) => {

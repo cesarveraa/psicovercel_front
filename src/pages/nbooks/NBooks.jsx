@@ -1,8 +1,8 @@
 // /src/nbooks/NBooks.js
-import { useQuery } from "./@tanstack/react-query";
-import React, { useEffect } from "./react";
-import { toast } from "./react-hot-toast";
-import { useSearchParams } from "./react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import React, { useEffect } from "react";
+import { toast } from "react-hot-toast";
+import { useSearchParams } from "react-router-dom";
 import BookCard from "./../../components/BookCard"; // Import the book card component
 import BookCardSkeleton from "./../../components/BookCardSkeleton"; // Import the skeleton component
 import ErrorMessage from "./../../components/ErrorMessage";

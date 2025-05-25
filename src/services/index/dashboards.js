@@ -1,4 +1,4 @@
-import axios from "./axios";
+import axios from "axios";
 
 // Actualizar totalVisualizaciones
 export const updateTotalVisualizaciones = async (totalVisualizaciones) => {

@@ -1,8 +1,8 @@
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import { useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
-import { useNavigate, useParams } from "./react-router-dom";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import {
     getSingleBookCategory,
     updateBookCategory,

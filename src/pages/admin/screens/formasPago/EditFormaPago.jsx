@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "./react";
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
-import { useNavigate, useParams } from "./react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import { getFormaPagoById, updateFormaPago } from "./../../../../services/index/formaPagos";
 
 const EditFormaPago = () => {

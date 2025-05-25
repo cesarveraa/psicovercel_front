@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "./react";
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
-import { useSelector } from "./react-redux";
-import { useNavigate, useParams } from "./react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { useNavigate, useParams } from "react-router-dom";
 import { getCommentById, updateComment, createComment } from '../../../../services/index/pulpiComentarios';
 
 const AddEditComment = () => {

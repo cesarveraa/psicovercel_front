@@ -9,12 +9,12 @@ import {
   AiOutlineStrikethrough,
   AiOutlineUndo,
   AiOutlineUnorderedList,
-} from "./react-icons/ai";
-import { BiParagraph } from "./react-icons/bi";
-import { FiCode } from "./react-icons/fi";
-import { MdOutlineLayersClear } from "./react-icons/md";
-import { PiCodeBlock, PiQuotes, PiImageSquareBold } from "./react-icons/pi";
-import { TbSpacingVertical } from "./react-icons/tb";
+} from "react-icons/ai";
+import { BiParagraph } from "react-icons/bi";
+import { FiCode } from "react-icons/fi";
+import { MdOutlineLayersClear } from "react-icons/md";
+import { PiCodeBlock, PiQuotes, PiImageSquareBold } from "react-icons/pi";
+import { TbSpacingVertical } from "react-icons/tb";
 
 const MenuBar = ({ editor }) => {
   const addImage = useCallback(() => {

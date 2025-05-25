@@ -1,4 +1,4 @@
-import axios from "./axios";
+import axios from "axios";
 
 // Actualizar un detalle de "About Us"
 export const updateAbout = async (slug, updatedData, token) => {

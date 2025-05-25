@@ -1,7 +1,7 @@
-import { useMutation } from "./@tanstack/react-query";
-import React, { useEffect } from "./react";
-import { toast } from "./react-hot-toast";
-import { Link } from "./react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+import React, { useEffect } from "react";
+import { toast } from "react-hot-toast";
+import { Link } from "react-router-dom";
 import { images, stables } from "./../../../../constants";
 import { useDataTable } from "./../../../../hooks/useDataTable";
 import {

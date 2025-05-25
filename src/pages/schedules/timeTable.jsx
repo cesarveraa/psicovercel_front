@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 import { getTextColor } from "./../../utils/colorUtils";
 const Timetable = ({ timetable, scheduleColors }) => {
   const renderCell = (day, time) => {

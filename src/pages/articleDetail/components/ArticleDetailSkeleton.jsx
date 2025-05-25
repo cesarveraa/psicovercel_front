@@ -1,5 +1,5 @@
-import React from "./react";
-import { BiImageAlt } from "./react-icons/bi";
+import React from "react";
+import { BiImageAlt } from "react-icons/bi";
 
 const ArticleDetailSkeleton = () => {
   return (

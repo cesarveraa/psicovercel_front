@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "./react";
+import React, { useState, useEffect } from "react";
 import MainLayout from '../../components/MainLayout';
 import ParchmentBox from "./../../components/ParchmentBox";
 import FlipCard from "./../../components/FlipCard";
 import FlipCard2 from "./../../components/FlipCard2";
-import Slider from "./react-slick";
+import Slider from "react-slick";
 import { faPersonCircleQuestion, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { useQuery } from "./@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { getSingleSCE } from "./../../services/index/sces";
 import { getEstudiante } from "./../../services/index/estudiante";
 import ErrorMessage from "./../../components/ErrorMessage";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 
 const SCE = () => {
   const slug = "sce"; // Definimos el slug por defecto

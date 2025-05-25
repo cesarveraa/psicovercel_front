@@ -1,6 +1,6 @@
 // src/components/CartSummary.jsx
-import React from "./react";
-import { Link } from "./react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const CartSummary = ({ cart, onClose }) => {
   const totalItems = cart.reduce((sum, product) => sum + product.quantity, 0);

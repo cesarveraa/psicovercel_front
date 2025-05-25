@@ -1,5 +1,5 @@
-import React from "./react";
-import { AiOutlineLoading3Quarters } from "./react-icons/ai";
+import React from "react";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const CTASkeleton = () => {
   const skeletonItems = Array.from({ length: 5 }).map((_, index) => (

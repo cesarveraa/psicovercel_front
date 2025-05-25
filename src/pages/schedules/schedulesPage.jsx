@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import MainLayout from "./../../components/MainLayout";
 import { getAllSubjects } from "./../../services/index/subjects";
 import { getSchedulesByIds } from "./../../services/index/schedule";

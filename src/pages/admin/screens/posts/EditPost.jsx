@@ -1,10 +1,10 @@
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import React, { useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { HiOutlineCamera } from "./react-icons/hi";
-import { useSelector } from "./react-redux";
-import { Link, useNavigate, useParams } from "./react-router-dom";
-import CreatableSelect from "./react-select/creatable";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import React, { useState } from "react";
+import { toast } from "react-hot-toast";
+import { HiOutlineCamera } from "react-icons/hi";
+import { useSelector } from "react-redux";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import CreatableSelect from "react-select/creatable";
 import ErrorMessage from "./../../../../components/ErrorMessage";
 import Editor from "./../../../../components/editor/Editor";
 import { stables } from "./../../../../constants";

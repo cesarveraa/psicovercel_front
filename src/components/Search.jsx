@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "./react";
-import { toast } from "./react-hot-toast";
-import { useLocation } from "./react-router-dom";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { useLocation } from "react-router-dom";
 import ArticleCard from "./../components/ArticleCard";
 import MainLayout from "./../components/MainLayout";
 import { images } from "./../constants";

@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 
 import Search from "./../../../components/Search";
 import { images } from "./../../../constants";

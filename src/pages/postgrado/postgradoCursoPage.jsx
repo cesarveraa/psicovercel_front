@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getAllPostgradoCursos } from '../../services/index/postgradoCursos';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import MainLayout from "./../../components/MainLayout";
 import { FaUniversity, FaClock, FaTags, FaLink } from 'react-icons/fa'; // Asumiendo que has instalado react-icons
 import ExternalResourceBanner from "./../../components/ExternalResourceBanner";

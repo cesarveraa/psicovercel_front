@@ -1,5 +1,5 @@
 // src/services/index/logsSistema.js
-import axios from "./axios";
+import axios from "axios";
 
 // Crear un nuevo log del sistema (cuando un usuario accede o realiza acciones)
 export const createSystemLog = async ({ userId, email, sistema, accion }, token) => {

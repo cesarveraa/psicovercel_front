@@ -1,7 +1,7 @@
-import React, { useState } from "./react";
-import { useQuery } from "./@tanstack/react-query";
+import React, { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { getSingleHomePage } from "./../../../services/index/homePages";
-import { AiOutlineBulb, AiOutlineCreditCard, AiOutlineDollarCircle, AiOutlineForm, AiOutlineTrophy } from "./react-icons/ai";
+import { AiOutlineBulb, AiOutlineCreditCard, AiOutlineDollarCircle, AiOutlineForm, AiOutlineTrophy } from "react-icons/ai";
 import ErrorMessage from "./../../../components/ErrorMessage";
 import CTASkeleton from "./../../../components/CTASkeleton";
 

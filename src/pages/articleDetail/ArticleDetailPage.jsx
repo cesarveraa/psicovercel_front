@@ -1,8 +1,8 @@
-import { useMutation, useQuery } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { AiOutlineCaretDown, AiOutlineCheck, AiOutlineLike } from "./react-icons/ai";
-import { useSelector } from "./react-redux";
-import { Link, useParams } from "./react-router-dom";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { AiOutlineCaretDown, AiOutlineCheck, AiOutlineLike } from "react-icons/ai";
+import { useSelector } from "react-redux";
+import { Link, useParams } from "react-router-dom";
 import BreadCrumbs from "./../../components/BreadCrumbs";
 import ErrorMessage from "./../../components/ErrorMessage";
 import MainLayout from "./../../components/MainLayout";

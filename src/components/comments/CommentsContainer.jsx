@@ -1,8 +1,8 @@
-import React, { useState } from "./react";
-import { useSelector } from "./react-redux";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
-import { useMutation, useQueryClient } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
 import {
   createNewComment,
   deleteComment,

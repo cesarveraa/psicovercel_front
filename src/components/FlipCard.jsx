@@ -1,4 +1,4 @@
-import React from "./react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FlipCard = ({ icon, subtitle, title, details, cardClassName }) => {

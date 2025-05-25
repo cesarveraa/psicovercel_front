@@ -1,12 +1,12 @@
-import React, { useState } from "./react";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "./react-icons/ai";
-import { MdKeyboardArrowDown } from "./react-icons/md";
-import { useDispatch, useSelector } from "./react-redux";
-import { Link, useNavigate } from "./react-router-dom";
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import { images, stables } from "./../constants";
 import { getAllPosts } from "./../services/index/posts";
 import { logout } from "./../store/actions/user";
-import { FaMoon, FaSun } from "./react-icons/fa"; // Importar iconos de luna y sol
+import { FaMoon, FaSun } from "react-icons/fa"; // Importar iconos de luna y sol
 
 const navItemsInfo = [
   { name: "Inicio", type: "link", href: "/" },

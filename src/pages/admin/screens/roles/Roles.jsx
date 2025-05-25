@@ -1,7 +1,7 @@
-import { useMutation, useQuery, useQueryClient } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import toast from "./react-hot-toast";
-import { useSelector } from "./react-redux";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import { useSelector } from "react-redux";
 import { createSystemLog } from "./../../../../services/index/logsSistema";
 import {
   createRole,

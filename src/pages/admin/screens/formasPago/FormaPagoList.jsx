@@ -1,7 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect } from 'react';
 import { toast } from 'react-hot-toast';
-import { useSelector } from "./react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import { images } from "./../../../../constants";
 import { deleteFormaPago, getAllFormaPago } from '../../../../services/index/formaPagos';

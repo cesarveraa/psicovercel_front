@@ -1,6 +1,6 @@
-import { useQuery } from "./@tanstack/react-query";
-import React, { useEffect } from "./react";
-import { useSelector } from "./react-redux";
+import { useQuery } from "@tanstack/react-query";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { createSystemLog, getAllSystemLogs } from "./../../../../services/index/logsSistema";
 
 const LogsSistema = () => {

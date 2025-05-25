@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getSingleUniversity } from '../../services/index/university';
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import MainLayout from "./../../components/MainLayout";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 

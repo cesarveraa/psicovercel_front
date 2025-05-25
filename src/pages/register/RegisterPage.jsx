@@ -1,14 +1,14 @@
-import { useMutation } from "./@tanstack/react-query";
-import React, { useEffect, useState } from "./react";
-import { useForm } from "./react-hook-form";
-import toast from "./react-hot-toast";
-import { useDispatch, useSelector } from "./react-redux";
-import { Link, useNavigate } from "./react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
-import { differenceInDays } from "./date-fns";
+import { differenceInDays } from "date-fns";
 import MainLayout from "./../../components/MainLayout";
 import { signup } from "./../../services/index/users";
-import { userActions } from "./../../store/reducers/userReducers";
+import { userActions } from "../../store/reducers/userReducers";
 
 const RegisterPage = () => {
   const navigate = useNavigate();

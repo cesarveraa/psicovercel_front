@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "./react";
+import React, { useEffect, useState } from "react";
 import { getSchedulesByIds } from "./../../services/index/schedule";
 import { getDocente } from "./../../services/index/docentes";
-import { toast } from "./react-hot-toast";
+import { toast } from "react-hot-toast";
 import { generateRandomColor, isColorUnique, getTextColor } from "./../../utils/colorUtils";
 
 const HorarioDisplay = ({ selectedSubjects, timetable, setTimetable, scheduleColors, setScheduleColors }) => {

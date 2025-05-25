@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "./react";
-import { useQuery } from "./@tanstack/react-query";
-import { toast } from "./react-hot-toast";
+import React, { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { toast } from "react-hot-toast";
 import { getAllPosts } from "./../../services/index/posts";
 import ArticleCardSkeleton from "./../../components/ArticleCardSkeleton";
 import ErrorMessage from "./../../components/ErrorMessage";
 import ArticleCard from "./../../components/ArticleCard";
 import MainLayout from "./../../components/MainLayout";
 import Pagination from "./../../components/Pagination";
-import { useSearchParams } from "./react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import Search from "./../../components/Search";
 
 let isFirstRun = true;
