@@ -3,7 +3,7 @@ import axios from "axios";
 export const getAllDocentes = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
     // Asegúrate de que la URL base coincide con la configuración de tu servidor
-    const { data, headers } = await axios.get(`http://localhost:5000/api/docente?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`);
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/docente?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`);
     console.log(data); // Opcional, para depuración
     return { data, headers };
   } catch (error) {

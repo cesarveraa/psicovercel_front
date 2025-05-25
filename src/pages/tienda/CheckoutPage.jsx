@@ -185,7 +185,7 @@ const CheckoutPage = () => {
                       />
                       <h3 className="mt-2 text-xl font-bold">{formaPago.name}</h3>
                       <a
-                        href={`http://localhost:5000/uploads/${formaPago.imageUrl.split('/').pop()}`}
+                        href={`https://psicovercel-front-8ec8.vercel.app/uploads/${formaPago.imageUrl.split('/').pop()}`}
                         download={formaPago.imageUrl.split('/').pop()}
                         className="mt-2 inline-block px-4 py-2 bg-blue-500 text-white rounded-lg font-medium transition-colors"
                         style={{ transition: 'background-color 0.3s ease' }}

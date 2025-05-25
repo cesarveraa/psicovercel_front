@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAllUniversities = async (searchKeyword = "", page = 1, limit = 10) => {
   try {
-    const { data, headers } = await axios.get(`http://localhost:5000/api/universities?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`);
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/universities?searchKeyword=${searchKeyword}&page=${page}&limit=${limit}`);
     return { data, headers };
   } catch (error) {
     if (error.response && error.response.data.message)
@@ -14,7 +14,7 @@ export const getAllUniversities = async (searchKeyword = "", page = 1, limit = 1
 
 export const getSingleUniversity = async (slug) => {
   try {
-    const { data, headers } = await axios.get(`http://localhost:5000/api/universities/slug/${slug}`);
+    const { data, headers } = await axios.get(`https://psicovercel-front-8ec8.vercel.app/api/universities/slug/${slug}`);
     return { data, headers };
   } catch (error) {
     if (error.response && error.response.data.message)
